@@ -6,7 +6,7 @@
 db.cuty.insert({"name":"Lim Hanna","age":23,"food":["Chocolate"],"color":["Green"],"book":{"bookname":["Third Humanity"],"publishing_house":["Open Books"], "author":["Bernard Werber"]}})
 ```
 
-
+--------------------------------------------------------------------
 ```
 db.cuty.find().pretty()
 ```
