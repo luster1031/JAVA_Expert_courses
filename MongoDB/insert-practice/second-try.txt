@@ -1,0 +1,7 @@
+use cuty
+db.cuty.insert({"name":"Lim Hanna","age":23,"food":["Chocolate"],"color":["Green"],"book":{"bookname":["Third Humanity"],"publishing_house":["Open Books"], "author":["Bernard Werber"]}})
+db.cuty.insert({"name":"Kim So Won","age":23,"food":["meat"],"color":["yellow"],"book":{"bookname":["Dollar Gut Store"],"publishing_house":["Factory Nine"], "author":["Lee Mi-yeah"]}})
+db.cuty.insert({"name":"kwon junhee","age":24,"food":["sushi"],"color":["purple"],"book":{"bookname":["abandoned places"],"publishing_house":["seong-an dang"], "author":["photography"]}})
+db.cuty.insert({"name":"Park Sang Eon","age":29,"food":["Cold noodles"],"color":["Blue"],"book":{"bookname":["A 100-year-old man who ran over the window"],"publishing_house":["Open Books"], "author":["Jonas Jonason"]}})
+db.cuty.insert({"name":"lee chang joo","age":28,"food":["beef"],"color":["skyblue"],"book":{"bookname":["Three kingdoms"],"publishing_house":["minumsa"], "author":["lee mun-yeol"]}})
+db.cuty.insert({"name":"Park GwangJae","age":27,"food":["Sundae gukbap"],"color":["Red"],"book":{"bookname":["The Essence of Java"],"publishing_house":["dough"], "author":["Namgungseong"]}})
