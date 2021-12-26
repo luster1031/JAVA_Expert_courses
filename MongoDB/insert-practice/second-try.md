@@ -7,7 +7,8 @@ db.cuty.insert({"name":"Lim Hanna","age":23,"food":["Chocolate"],"color":["Green
 ```
 
 
-``` db.cuty.find().pretty()
+```
+db.cuty.find().pretty()
 ```
 하면, 
 ```
