@@ -11,25 +11,25 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/getpost")
 public class GetPostServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
-		out.print("<h2>요청 방식 : "+request.getMethod()+"</h2>");
-		out.print("<h2>Query 문자열 : "+
-		                  request.getParameter("name")+"</h2>");
+		out.print("<h2>요청 방식 : " + request.getMethod() + "</h2>");
+		out.print("<h2>Query 문자열 : " + request.getParameter("name") + "</h2>");
 		out.close();
 		System.out.println("GET 방식 수행");
 	}
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
-		//request.setCharacterEncoding("UTF-8");
-		out.print("<h2>요청 방식 : "+request.getMethod()+"</h2>");
-		out.print("<h2>Query 문자열 : "+request.getParameter("name")+"</h2>");
+		request.setCharacterEncoding("UTF-8");
+		out.print("<h2>요청 방식 : " + request.getMethod() + "</h2>");
+		out.print("<h2>요청 파라미터 : " + request.getParameter("name") + "</h2>");
 		out.close();
 		System.out.println("POST 방식 수행");
 	}
 }
-
-
-
