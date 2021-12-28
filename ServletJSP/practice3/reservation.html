@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web 실습 3</title>
+</head>
+<body>
+	<h1>자연휴양림 예약 서비스</h1>
+	<hr>
+	<form method="post" action="/edu/reservation">
+		예약자명 : <input type="text" name="name"> <br>
+		예약암호 : <input type="password" name = pw><br>
+		휴양림선택 : <input type="radio" name="forest" value="산음">산음
+			<input type="radio" name="forest" value="중미산">중미산
+			<input type="radio" name="forest" value="유명산">유명산
+			<input type="radio" name="forest" value="아세안">아세안<br>
+		추가요청 : 
+		바베큐<input type="checkbox" name="add" value="바베큐">
+		수영장 <input type="checkbox" name="add" value="수영장">
+		낚시 <input type="checkbox" name="add" value="낚시">
+		조식 <input type="checkbox" name="add" value="조식"><br>
+		예약날짜 :
+		<input id=Reservation name=Reservation type=date min="2000-01-01" max="2100-01-01">
+		
+		<br>
+		<input type="submit" value="보내기"> 
+		<input type="reset" value="다시 작성하기">
+		
+	</form>
+</body>
+</html>
