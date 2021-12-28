@@ -27,7 +27,7 @@ public class ReservationServlet extends HttpServlet {
 		String[] add = request.getParameterValues("add");
 
 		out.print("<h2>" + name+"님의 예약내용:</h2><hr>");
-		out.print("<li> 휴양림 : ");
+		out.print("<ul><li> 휴양림 : ");
 		if (forest == null) {
 			out.print("휴양림을 선택하지 않으셨습니다.");
 		} else {
@@ -49,7 +49,7 @@ public class ReservationServlet extends HttpServlet {
 		
 		String[] day = request.getParameter("Reservation").split("-");
 		
-		out.printf("<li>예약 날짜 : %s년 %s월 %s일</li>" , day[0], day[1], day[2]);
+		out.printf("<li>예약 날짜 : %s년 %s월 %s일</li></ul>" , day[0], day[1], day[2]);
 		out.close();
 	}
 
