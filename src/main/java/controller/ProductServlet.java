@@ -17,11 +17,11 @@ public class ProductServlet extends HttpServlet {
 		HttpSession session = request.getSession();	//	세션객체 참조값 리턴
 													//	없으면 새로만들어서 리턴
 		
-		if(session.getAttribute("product")==null) {	//	데이터 값 보관할 방에 대한 객체 등록
-			session.setAttribute("product", new ProductVO());
+		if(session.getAttribute("product2")==null) {	//	데이터 값 보관할 방에 대한 객체 등록
+			session.setAttribute("product2", new ProductVO());
 		}
 		
-		ProductVO vo = (ProductVO)session.getAttribute("product");	//	참조값 꺼내와서, vo객체에 
+		ProductVO vo = (ProductVO)session.getAttribute("product2");	//	참조값 꺼내와서, vo객체에 
 		String param = request.getParameter("pid");
 		if(param.equals("p001"))
 			vo.setApple_count(1);
@@ -30,7 +30,7 @@ public class ProductServlet extends HttpServlet {
 		else
 			vo.setHala_count(1);
 		
-		request.getRequestDispatcher("/jspsrc/productView.jsp").forward(request, response);
+		request.getRequestDispatcher("/jspsrc/productViewEL.jsp").forward(request, response);
 	}
 
 
